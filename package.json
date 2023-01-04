@@ -1,0 +1,23 @@
+{
+  "name": "vue3-demo-project",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 4173"
+  },
+  "dependencies": {
+    "@iconify-json/twemoji": "^1.1.5",
+    "@unocss/preset-icons": "^0.46.5",
+    "axios": "^1.2.0",
+    "pinia": "^2.0.21",
+    "sass": "^1.56.1",
+    "unocss": "^0.46.5",
+    "vue": "^3.2.38",
+    "vue-router": "^4.1.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.0.3",
+    "vite": "^3.0.9"
+  }
+}
