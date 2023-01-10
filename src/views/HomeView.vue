@@ -1,12 +1,24 @@
 <template>
   <div class="home-view">
     <!-- 页头 -->
-    <div class="header">
-      <div class="center">
+    <div class="header w-100% bg-no-repeat h-100vh bg-black">
+      <div class="center h-100px c-white bg-black">
         <!-- 页头的导航栏 -->
-        <div class="header_nav">
-          <div class="right_header"></div>
+        <div
+          class="header_nav w-80% h-100% flex justify-between items-center m-auto"
+        >
+          <div class="left-title">My WebSite</div>
+          <div class="right-nav-btn flex justify-evenly items-center">
+            <div class="hover-c-red">Home</div>
+            <div class="hover-c-red m-l-10px">About</div>
+            <div class="hover-c-red m-l-10px">Content</div>
+            <div class="hover-c-red m-l-10px">Servies</div>
+          </div>
         </div>
+      </div>
+      <div class="homeView-info">
+        <div class="homeView-title">Welcome To My Website</div>
+        <div class="homeView-description">This is a description</div>
       </div>
     </div>
 
@@ -28,9 +40,9 @@
 <script setup>
 import { onMounted } from "vue-demi";
 
-  onMounted(()=>{
-    // console.log(window.iNoBounce.isEnabled())
-  })
+onMounted(() => {
+  // console.log(window.iNoBounce.isEnabled())
+});
 </script>
 
 <style lang="scss" scoped>
@@ -41,38 +53,12 @@ a {
 
 .header {
   background-color: rgba(0, 0, 0, 0.7);
-  height: 60px;
-}
-
-.center {
-  width: 1080px;
-  margin: 0 auto;
+  background-image: url(../assets/bg-img.webp);
+  background-position: center;
+  background-size: cover;
 }
 
 /* 主页导航栏 */
-.header_nav {
-  text-align: right;
-  height: 60px;
-}
-
-.right_header {
-  float: right;
-  height: 30px;
-  line-height: 30px;
-  margin: 15px 0;
-}
-
-.header_nav .right_header a {
-  display: inline-block;
-  color: white;
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0 5px;
-}
-
-.header_nav a:hover {
-  border-bottom: 2px solid white;
-}
 
 /* 页头下方导航栏 */
 
@@ -100,37 +86,4 @@ a {
 }
 
 /* 主内容区 */
-
-/* 上方搜索栏 */
-.upper {
-  height: 400px;
-  overflow: hidden;
-  margin: 0 auto;
-
-  /* 搜索栏下方图片 */
-  background-image: url(../assets/search-baci.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center 40%;
-
-  position: relative;
-}
-
-#location {
-  display: block;
-  outline: none;
-  box-sizing: border-box;
-  height: 60px;
-  width: 763px;
-  border: 0;
-  border-radius: 30px;
-  padding: 12px 20px;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 25%);
-
-  /* 居中 */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 </style>
