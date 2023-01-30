@@ -10,6 +10,8 @@
     "@iconify-json/twemoji": "^1.1.5",
     "@unocss/preset-icons": "^0.46.5",
     "axios": "^1.2.0",
+    "loadsh": "^0.0.4",
+    "lottie-web": "^5.10.1",
     "pinia": "^2.0.21",
     "sass": "^1.56.1",
     "unocss": "^0.46.5",
@@ -17,6 +19,7 @@
     "vue-router": "^4.1.5"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.191",
     "@vitejs/plugin-vue": "^3.0.3",
     "vite": "^3.0.9"
   }

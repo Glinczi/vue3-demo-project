@@ -18,6 +18,12 @@ export default defineConfig({
           },
         }),
         presetUno(),
+        presetIcons({
+          collections: {
+            twemoji: () =>
+              import('@iconify-json/twemoji').then((i) => i.default)
+          }
+        })
       ],
     }),
   ],

@@ -44,6 +44,16 @@ const router = createRouter({
       name: 'toastNotifiction',
       component: () => import('../views/ToastNotification.vue'),
     },
+    {
+      path: '/randomChoice',
+      name: 'randomChoice',
+      component: () => import('../views/RandomChoice.vue'),
+    },
+    {
+      path: '/demo',
+      name: 'demo',
+      component: () => import('../views/Demo.vue'),
+    },
   ],
   scrollBehavior(to, from, savedPosition) {
     // console.log('to', to)
